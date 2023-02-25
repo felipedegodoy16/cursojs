@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(105, 105, 255);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*
+        var d = window.document.getElementById('msg') criando var selecionando por id
+        window.document.write('Está escrito assim ' + p1.innerText) mostrando texto dentro da var p1
+        corpo.style.background = 'black' mudando cor do back
+        p1.style.color = 'blue' mudando cor do elemento
+        d.style.background = 'green' mudando cor do back
+        d.innerText = 'Estou aguardando...' d terá esse valor e mostrará na tela
+        var d = window.document.getElementsByName('msg')[0] select element por name, precisa de indice
+        d.innerText = 'Olá' d vai ter esse valor e mostrará na tela
+        window.document.getElementById('msg').innerText = 'Olá' select element por id e colocando innertext
+        var d = window.document.querySelector('div#msg') usando querySelector
+        var d = window.document.querySelectorAll('div#msg') usando querySelectorAll pegando tudo que tem esse msg e é uma div
+        d.style.background = 'blue'
+        Pode se usar essas duas maneiras, porém, um fica mais contraido que o outro
+        */
+       
+       var d = window.document.querySelector('div.msg')
+       d.style.background = 'blue'
+       
+    </script>
+</body>
+</html>
